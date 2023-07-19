@@ -2,10 +2,8 @@
  
 $(function () {
  
-    $(".rateYo").rateYo({
-     
-    });
-    var normalFill = $("#rateYo").rateYo("option", "normalFill");
-    $("#rateYo").rateYo("option", "normalFill", "#F39C21");
-    
+  var mixer = mixitup('.directions__list');
+    $('directions__filter-btn'), on('click', function (e) {
+      $(this).addClass('directions__filter-btn--all')
+    })
   });
