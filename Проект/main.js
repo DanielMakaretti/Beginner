@@ -1,6 +1,5 @@
 /* Javascript */
- 
-console.log('Привет от JavaScript!');
+
 $(function () {
  
  var mixer = mixitup('.directions__list');

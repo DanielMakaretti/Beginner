@@ -15,6 +15,12 @@
     height: 100%;
     
 }
+.main__about { 
+  margin-bottom: 161px;
+}
+.main__directions { 
+padding-bottom: 180px;
+}
 .button {
   letter-spacing: 0.5px;
   line-height: 52px;
@@ -73,7 +79,7 @@ line-height: 130%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-
+margin-bottom: 179px;
  }
 .header__top-inner {
   display: flex;
@@ -209,9 +215,9 @@ margin-right: 12px;
 
 /*=================MAIN==========================================================*/
 
-.main { }
+
 .about {
-  padding: 100px 0 160px;
+
   
  }
 
@@ -219,7 +225,7 @@ margin-right: 12px;
   
 }
 .about__inner {
- 
+
  }
 .about__createx { 
   position: relative;
@@ -309,7 +315,6 @@ margin-bottom: 0;
  }
 /*======================3 section===========================================================*/
  .directions { 
-  padding-bottom: 180px;
  }
 .directions__inner { 
   margin-bottom: 90px;
@@ -476,4 +481,53 @@ justify-content: center;
 max-width: 240px; 
 }
 
- 
+ /*======================4 section===========================================================*/
+
+ .cert__inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+ }
+ .cert__inner::before {
+  content: "";
+  display: block;
+  background: url(/Проект/images/Decoration/4.svg) 0 0 no-repeat;
+  position: absolute;
+  top: -15px;
+  left: -190px;
+  width: 60px;
+  height: 60px;
+ }
+ .main__cert {
+  margin-bottom: -46px;
+  }
+.cert { 
+  
+}
+.container { }
+.cert__content { 
+  margin-right: 30px;
+  max-width: 400px;
+  
+}
+.cert__heading {
+  margin-bottom: 50px;
+}
+.heading { }
+.heading__subtittle { }
+.heading__tittle { }
+.cert__text {
+  margin-bottom: 32px;
+ }
+.cert__logos { 
+  display: flex;
+}
+.logos__item { 
+  margin-right: 40px;
+}
+.logos__item:last-child {
+  margin-right: 0;
+} 
+.cert__image-box { 
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+}
