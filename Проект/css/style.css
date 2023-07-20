@@ -63,6 +63,9 @@ font-weight: 700;
 font-weight: 900;
 line-height: 130%;
 }
+.heading--text-center { 
+  text-align: center;
+}
 /*-------------------------HEADER-TOP--------------------------------------*/
 .header {
   font-weight: 700;
@@ -305,12 +308,41 @@ margin-bottom: 0;
  align-self: center;
  }
 /*======================3 section===========================================================*/
- .directions { }
-.directions__inner { }
-.directions__heading { 
+ .directions { 
+  padding-bottom: 180px;
+ }
+.directions__inner { 
   margin-bottom: 90px;
+  position: relative;
 }
-.directions__body { }
+.directions__inner::before { 
+ content: "";
+ display: block;
+ position: absolute;
+  top: 0;
+  left: -190px;
+  top: 30px;
+  width: 136px;
+  height: 115px;
+  background: url(/Проект/images/Decoration/2.svg) 0 0 no-repeat ;
+}
+.directions__inner::after { 
+  content: "";
+  display: block;
+  position: absolute;
+   right: -400px;
+   top: 400px;
+   width: 243px;
+   height: 243px;
+   background: url(/Проект/images/Decoration/3.svg) 0 0 no-repeat ;
+   opacity: .12;
+  
+}
+.directions__heading { 
+  
+}
+.directions__body {
+ }
 .directions__filter-box { 
   display: flex;
   margin-bottom: 56px;
@@ -346,9 +378,25 @@ margin-bottom: 0;
   display: grid;
   grid-template: repeat(2, auto) / repeat(3, 1fr);
   gap: 30px;
+  
 }
 .directions__list-item { 
  
+}
+.directions__list-item--marketing .direction__link-tag {
+background-color: #03CEA4;
+}
+.directions__list-item--management .direction__link-tag {
+  background-color: #5A87FC;
+}
+.directions__list-item--hr .direction__link-tag {
+  background-color: #F89828;
+}
+.directions__list-item--design .direction__link-tag {
+  background-color: #F52F6E;
+}
+.directions__list-item--development .direction__link-tag {
+  background-color: #7772F1;
 }
 .directions__list-link { 
   border-radius: 4px;
