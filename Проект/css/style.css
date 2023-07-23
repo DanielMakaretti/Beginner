@@ -533,7 +533,9 @@ max-width: 240px;
 }
 
 /*=================================TEAM==========================================*/
-.main__team { }
+.main__team { 
+  padding: 160px 0 180px;
+}
 .team { }
 .container { }
 .team__inner { 
@@ -554,13 +556,13 @@ max-width: 240px;
 
  }
  .team__slide:hover {
- 
   
  }
 .team__image-box {
   border-radius: 4px;
   margin-bottom: 16px;
   position: relative;
+  
  }
 .team__image { 
   position: relative;
@@ -584,13 +586,25 @@ max-width: 240px;
   right: 0;
   bottom: 0;
   padding: 20px;
-  background: linear-gradient(180deg, rgba(30, 33, 44, 0.00) 43.90%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.77) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+  background: linear-gradient(5500deg, rgba(30, 33, 44, 0.00) 43.90%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.77) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+  transition: all .3s;
 }
 .team__socials-item {
-  
+  margin-right: 6px;
  }
-.team__socials-link { 
-  
+ .team__socials-item:last-child {
+  margin-right: -10px;
+ }
+ .team__socials-link { 
+  display: block;
+  line-height: 0;
+ }
+ .team__socials-link path { 
+  transition: all .3s;
+ }
+.team__socials-link:hover path { 
+ fill: #ffee00;
+ 
 }
 .team__info { 
   text-align: center;
