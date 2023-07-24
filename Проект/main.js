@@ -24,6 +24,20 @@ waitForAnimate: false,
       e.preventDefault()
       $('.team__slider').slick('slickNext')
     });
-   
+    $('.testimonials__slider').slick({
+      arrows: false,
+slidesToShow: 4,
+Infinite: true,
+draggable: false,
+waitForAnimate: false,
+});
+    $('.testimonials__slider-prev').on('click', function (e) {
+      e.preventDefault()
+      $('.testimonials__slider').slick('slickPrev')
+    });
+    $('.testimonials__slider-next').on('click', function (e) {
+      e.preventDefault()
+      $('.testimonials__slider').slick('slickNext')
+    });
    
  
