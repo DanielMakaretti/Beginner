@@ -680,25 +680,112 @@ fill: #fff;
 
 .main__testimonials { 
 padding-bottom: 195px;
+background: #F4F5F6;
 }
 .testimonials {
   
  }
 .container { }
 .testimonials__inner { 
-  
+  position: relative;
+  margin: 0 auto;
+ 
 }
-.testimonials__heading { }
+.testimonials__heading {
+  margin-bottom: 60px;
+ }
 .heading { }
 .heading__subtittle { }
 .heading__tittle { }
-.testimonials__slider-wrapper { }
-.testimonials__slider { }
-.testimonials__slide { }
-.testimonials__slide-inner { }
-.testimonials__quote { }
-.testimonials__user { }
-.testimonials__avatar { }
+.testimonials__slider-wrapper { 
+  background-color: #fff;
+  max-width: 1020px;
+  margin: auto;
+ 
+}
+.testimonials__slider {
+  margin: 0 auto;
+  background-color: #fff;
+  
+ }
+
+.testimonials__slide { 
+  padding: 64px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.testimonials__slide-inner {
+  max-width: 810px;
+  margin: 0 auto;
+  padding-left: 58px;
+ 
+ }
+.testimonials__quote {
+  position: relative;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 150%;
+ }
+ .testimonials__quote::before {
+content: "";
+position: absolute;
+top: 0;
+left: -48px;
+background: url(/Проект/images/Decoration/braces.svg) 0 0 / 100% no-repeat;
+width: 28px;
+height: 20px;
+ }
+.testimonials__user {
+  display: flex;
+  align-items: center;
+ }
+.testimonials__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+ }
 .testimonials__info { }
-.testimonials__info-name { }
-.testimonials__info-position { }
+.testimonials__info-name { 
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  color: #1E212C;
+  margin-bottom: 4px;
+}
+.testimonials__info-position {
+  font-size: 14px;
+font-weight: 400;
+line-height: 150%;
+color: #787A80;
+ }
+ .testimonials__arrow { 
+position: absolute;
+top: 0;
+transform: translateY(15%);
+bottom: 0;
+width: 50px;
+display: flex;
+align-items: center;
+ }
+ .testimonials__arrow svg{
+  border-radius: 50%; 
+  transition: all .3s;
+}
+.testimonials__arrow:hover svg {
+  background: #ff3f3a;
+  box-shadow: 0 0 0 15px #ff3f3a;
+}
+.testimonials__arrow path {
+  transition: all .3s;
+}
+.testimonials__arrow:hover path {
+  fill: #fff;
+}
+ .testimonials__prev { 
+left: 0px;
+justify-self: flex-start;
+ }
+ .testimonials__next { 
+  right: 0;
+  justify-content: flex-end;
+ }
