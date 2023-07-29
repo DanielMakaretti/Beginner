@@ -15,6 +15,7 @@ slidesToShow: 4,
 Infinite: true,
 draggable: false,
 waitForAnimate: false,
+				
 });
     $('.team__slider-prev').on('click', function (e) {
       e.preventDefault()
@@ -30,6 +31,7 @@ waitForAnimate: false,
       dots: true,
       appendDots: $('.testimonials__dots'),
       waitForAnimate: false,
+    
 });
 $('.testimonials__prev').on('click', function (e) {
   e.preventDefault()

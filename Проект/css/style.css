@@ -78,7 +78,7 @@ line-height: 130%;
 .header {
   font-weight: 700;
   background: url("/Проект/images/Decoration/shape-icons.svg") 50% 30% / cover no-repeat, linear-gradient(5555.95deg, rgba(255,63,58, .2) 0%, rgba(247, 94, 5, .2) 100%);
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 margin-bottom: 179px;
@@ -827,3 +827,64 @@ background-color: #F4F5F6;
   background-color: #424551;
   transition: all .3s;
    }
+
+   /*=====================WORK SECTIONS===================================================================================================================*/
+   /*=====================================================================================================================================================*/
+
+   .main__work { 
+    background-color: #F4F5F6;
+    padding-bottom: 144px;
+   }
+   .main__work { 
+  
+   }
+.work {
+  
+ }
+.container { 
+
+}
+.work__inner {
+  position: relative;
+}
+.work__inner::before {
+  content: "";
+  position: absolute;
+  top: 350px;
+  left: -200px;
+  background: url(/Проект/images/Decoration/shapes.svg) 0 0 / 100% no-repeat;
+  width: 90px;
+  height: 90px;
+ }
+.work__heading {
+  margin-bottom: 60px;
+ }
+.heading { }
+.heading--text-center { }
+.heading__subtittle { }
+.heading__tittle { }
+.work__list {
+
+ }
+.work__corporations {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(6, 1fr);
+  gap: 40px 100px;
+
+ }
+.work__corporation { 
+  
+}
+.work__corporation-link {
+  display: block;
+}
+.work__corporation-link img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) opacity(60%);
+  transition: all 1.3s;
+}
+.work__corporation-link:hover img{
+  filter: grayscale(1) opacity(100%) drop-shadow(20px 20px 10px rgb(0, 0, 0)) invert(100%) ;
+  transition: all .3s;
+}
