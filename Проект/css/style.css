@@ -645,6 +645,7 @@ color: #787A80;
   line-height: 0;
   border-radius: 50%;
   position: relative;
+  z-index: 5;
  }
 
  .team__slider-arrow path{
@@ -680,7 +681,8 @@ fill: #fff;
 
 .main__testimonials { 
 padding-bottom: 195px;
-background: #F4F5F6;
+background: url(/Проект/images/Decoration/Group\ 3.svg) 50% 2% no-repeat #F4F5F6;
+
 }
 .testimonials {
   
@@ -701,7 +703,7 @@ background: #F4F5F6;
   background-color: #fff;
   max-width: 1020px;
   margin: auto;
- 
+ margin-bottom: 47px;
 }
 .testimonials__slider {
   margin: 0 auto;
@@ -731,7 +733,7 @@ content: "";
 position: absolute;
 top: 0;
 left: -48px;
-background: url(/Проект/images/Decoration/braces.svg) 0 0 / 100% no-repeat;
+background: url(/Проект/images/Decoration/braces.svg) 50% 50% / 100% no-repeat;
 width: 28px;
 height: 20px;
  }
@@ -789,3 +791,39 @@ justify-self: flex-start;
   right: 0;
   justify-content: flex-end;
  }
+ .testimonials__dots .slick-dots {
+display: flex;
+justify-content: center;
+ }
+ .testimonials__dots li {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 12px;
+ }
+ .testimonials__dots li:last-child {
+  margin-right: 0;
+}
+ .testimonials__dots button {
+font-size: 0;
+border-color: transparent;
+height: 30px;
+width: 30px;
+display: flex;
+align-items: center;
+background-color: #F4F5F6;
+ }
+ .testimonials__dots button::before {
+ content: "";
+ height: 3px;
+ width: 100%;
+ background-color: #B3B7BC;
+ border-radius: 3px;
+}
+ .slick-dots {
+  background-color: #F4F5F6;
+ }
+ .testimonials__dots .slick-active button::before {
+  background-color: #424551;
+  transition: all .3s;
+   }

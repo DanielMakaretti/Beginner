@@ -28,7 +28,8 @@ waitForAnimate: false,
     $('.testimonials__slider').slick({
       arrows: false,
       dots: true,
-      Infinite: true,
+      appendDots: $('.testimonials__dots'),
+      waitForAnimate: false,
 });
 $('.testimonials__prev').on('click', function (e) {
   e.preventDefault()
