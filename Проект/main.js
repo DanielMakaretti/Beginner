@@ -82,7 +82,7 @@ $('.testimonials__next').on('click', function (e) {
     $('.program__acc-text').slideUp()
     $(this).toggleClass('program__acc-link--active')
     $(this).children('.program__acc-text').slideDown()
-})
+});
 
 
    
