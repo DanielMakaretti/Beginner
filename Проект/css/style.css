@@ -1330,7 +1330,7 @@ cursor: pointer;
 /*===================================FOOTER===================================================================================================================*/
 
 .main__footer {
-  background-color: #232631;
+  background-color: #1E212C;
   z-index: -1;
   color: #FFF;
   padding-top: 80px;
@@ -1386,13 +1386,21 @@ display: flex;
 }
 .footer__sitemap-inner { 
   margin-right: 80px;
+ 
 }
 .footer__inner-text { 
   margin-bottom: 12px;
   opacity: 0.6;
   display: flex;
+  white-space:nowrap;
+  transition: all .3s;
+}
+.footer__inner-text:hover { 
+  opacity: 1;
+  transition: all .3s;
 }
 .footer__inner-link { }
+
 .footer__courses {
   font-size: 16px;
   font-weight: 400;
@@ -1421,8 +1429,6 @@ line-height: 150%;
  }
 .footer__contactus-inner {
   margin-right: 80px;
-  opacity: 0.6;
-  
  }
 .footer__contactus-text {
   display: block;
@@ -1435,6 +1441,12 @@ line-height: 150%;
   padding-left: 20px;
   align-items: center;
   justify-content: center;
+  opacity: 0.6;
+  transition: all .3s;
+ }
+ .footer__contactus-tel:hover {
+  opacity: 1;
+  transition: all .3s;
  }
 .footer__contactus-mail {
   content: "";
@@ -1444,6 +1456,12 @@ line-height: 150%;
   padding-left: 22px;
   align-items: center;
   justify-content: center;
+  opacity: 0.6;
+  transition: all .3s;
+ }
+ .footer__contactus-mail:hover {
+  opacity: 1;
+  transition: all .3s;
  }
 .footer__head {
   font-size: 16px;
@@ -1451,20 +1469,36 @@ line-height: 150%;
   line-height: 150%;
 }
 .footer__newsletter {
- 
+  max-width: 285px;
  }
 .footer__head {
   margin-bottom: 24px;
  }
  .footer__form {
+ max-width: 285px;
  
  }
 .footer__form-row {
   width: 100%;
   margin-bottom: 12px;
+  
  }
-.footer__form-label {
+ .footer__form-label::before {
+ content: "";
+ background: url(/Проект/images/icons/Arrow-white.svg) no-repeat;
+ position: absolute;
+ width: 24px;
+ height: 24px;
+ top: 0px;
+ left: 250px;
+ transition: all .3s;
+ }
+ .footer__form-label:hover::before {
+transform: scale(1.2);
 
+  }
+.footer__form-label {
+  position: relative;
  }
 .footer__form-input { 
   font-size: 12px;
@@ -1518,7 +1552,7 @@ align-items: center;
 }
 .main__footer-2 {
   height: 58px;
-  background-color: #1b1b2b;
+  background-color: #292c37;
   
 }
 .footer__wrapper-inner-2 {
