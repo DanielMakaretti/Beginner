@@ -84,6 +84,20 @@ $('.testimonials__next').on('click', function (e) {
     $(this).children('.program__acc-text').slideDown()
 });
 
+$(window).on('scroll', function () {
+  if ($(window).scrollTop() > 0) {
+    $('.burger').addClass('burger--follow')
+   } else {
+    $('.burger').addClass('burger--follow')
+  }
+});
+setInterval(() => {
+console.log('1')
+}, 1000);
+$('.burger').on('click', function (e) {
+e.preventDefault()
+$('.header__top-inner').toggleClass('header__top--open')
+});
 
    
  
