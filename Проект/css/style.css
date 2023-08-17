@@ -8,6 +8,22 @@
     width: 100%;
    overflow: hidden;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(154, 156, 165, 0.349);
+  opacity: 0;
+  z-index: 50;
+  visibility: hidden;
+  transition: all .3s;
+}
+.overlay--show {
+opacity: 1;
+visibility: visible;
+}
 .container {
     max-width: 1260px;
     padding: 0 15px;
@@ -1568,7 +1584,17 @@ align-items: center;
 
 /*========================================MEDIA======================================================================================================*/
 /*========================================MEDIA======================================================================================================*/
-
+/*============================1200=================================*/
+@media (max-width: 1200px) {
+ .header__title {
+  font-size: 52px;
+   max-width: 376px;
+ }
+ .header__img {
+  max-width: 450px;
+ }
+  }
+/*============================1100=================================*/
 @media (max-width: 1100px) {
 .burger {
   position: fixed;
@@ -1606,6 +1632,17 @@ align-items: center;
   height: 3px;
   background-color: rgb(66, 69, 81);
   border-radius: 3px;
+}
+.burger--active span{
+  transform: scale(0);
+}
+.burger--active::before{
+  position: absolute;
+  transform: rotate(45deg);
+}
+.burger--active::after{
+  position: absolute;
+  transform: rotate(-45deg);
 }
 .header {
   padding-top: 92px;
@@ -1645,7 +1682,7 @@ margin: 0 auto;
 }
 .header__nav-item {
   margin: 0;
-  padding: 30px;
+  padding: 20px;
 }
 .header__nav-link {
   padding: 30px;
@@ -1661,3 +1698,50 @@ margin-top: 30px;
 .header__user-naw {
 }
 }
+
+/*============================900=================================*/
+@media (max-width: 900px) {
+  .header__content {
+    margin: 0;
+  }
+ .header__img {
+  display: none;
+ }
+ .header__row {
+  display: none;
+ }
+   }
+   
+   /*============================450=================================*/
+
+@media (max-width: 400px) {
+  .header__top-inner {
+    min-width: none;
+    left: 0;
+  }
+  .header__title {
+    max-width: 360px;
+    font-size: 32px;
+  }
+  .header__content-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .header__content-btn {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+}
+
+/*============================400=================================*/
+
+@media (max-width: 400px) {
+.header__top-inner {
+  min-width: none;
+  left: 0;
+}
+}
+
+/*==========================================================================================================================*/
+/*===========================================================================================================================*/
+

@@ -84,19 +84,20 @@ $('.testimonials__next').on('click', function (e) {
     $(this).children('.program__acc-text').slideDown()
 });
 
-$(window).on('scroll', function () {
+
+setInterval(() => {
   if ($(window).scrollTop() > 0) {
     $('.burger').addClass('burger--follow')
    } else {
-    $('.burger').addClass('burger--follow')
+    $('.burger').removeClass('burger--follow')
   }
-});
-setInterval(() => {
-console.log('1')
-}, 1000);
-$('.burger').on('click', function (e) {
+}, 0);
+
+$('.burger, .overlay').on('click', function (e) {
 e.preventDefault()
 $('.header__top-inner').toggleClass('header__top--open')
+$('.burger').toggleClass('burger--active')
+$('.overlay').toggleClass('overlay--show')
 });
 
    
