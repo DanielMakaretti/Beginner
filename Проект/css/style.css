@@ -618,6 +618,7 @@ max-width: 240px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
  }
 .team__socials { 
   display: flex;
@@ -1602,7 +1603,19 @@ align-items: center;
  .header__img {
   max-width: 450px;
  }
- 
+ .testimonials__arrow {
+  display: none;
+ }
+ .testimonials__slide {
+  padding: 40px;
+ }
+ .testimonials__quote::before {
+ width: 20px;
+ height: 20px;
+ }
+ .testimonials__slide-inner {
+  padding-left: 30px;
+ }
 
   }
 /*============================1100=================================*/
@@ -1729,6 +1742,10 @@ margin-top: 30px;
         align-items: center;
         margin: 0 10px 0 20px;
        }
+       .testimonials__slider-wrapper {
+        margin-bottom: 10px;
+       }
+       
 }
 
 
@@ -1765,7 +1782,16 @@ gap: 30px 10px;
 .cert__inner {
   max-width: 600px;
    }
+   .testimonials__dots button {
+    width: 15px;
+   }
   }
+  
+/*===============================800=================================*/
+
+@media (max-width: 800px) {
+
+}
 /*===============================700=================================*/
 @media (max-width: 700px) {
   .about__values {
@@ -1777,6 +1803,15 @@ gap: 30px 10px;
    .directions__list {
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
    }
+   .testimonials__slider-wrapper {
+    padding: 0 0 0 10px;
+   }
+ .testimonials__slide {
+  padding: 20px;
+ }
+ .testimonials__heading {
+  margin-bottom: 20px;
+ }
  
 }
    /*============================550=================================*/
@@ -1821,6 +1856,13 @@ gap: 30px 10px;
  .cert__content {
   margin-bottom: 10px;
  }
+ .team__image-box {
+  margin: 0 auto 16px;
+  max-width: 300px;
+ }
+ .team__slider-arrows {
+ top: 60px;
+ }
    }
    
    /*============================450=================================*/
@@ -1855,6 +1897,7 @@ gap: 30px 10px;
    .logos__item {
     margin-right: 0;
    }
+   
 }
 
 /*============================400=================================*/
@@ -1873,8 +1916,22 @@ gap: 30px 10px;
  .about__number span {
   font-size: 30px;
  }
+ .team__heading {
+  margin-bottom: 50px;
+ }
+ .team__slider-arrows {
+  top: 80px;
+  }
 }
-
+@media (max-width: 200px) {
+  .team__slider-arrows {
+    top: 130px;
+    }
+}
+@media (max-width: 170px) {
+  .team__slider-arrows {
+    top: 150px;
+    }
+  }
 /*==========================================================================================================================*/
 /*===========================================================================================================================*/
-

@@ -15,8 +15,35 @@ slidesToShow: 4,
 Infinite: true,
 draggable: false,
 waitForAnimate: false,
-				
-});
+responsive:
+[
+  {
+    breakpoint: 1100,
+    settings: {
+      slidesToShow: 3,
+    },   
+  },
+  {
+    breakpoint: 800,
+    settings: {
+      slidesToShow: 2,
+    },   
+  },
+  {
+    breakpoint: 500,
+    settings: {
+      slidesToShow: 1,
+    },   
+  },
+  {
+    breakpoint: 200,
+    settings: {
+      
+    },   
+  },
+]
+    });
+
     $('.team__slider-prev').on('click', function (e) {
       e.preventDefault()
       $('.team__slider').slick('slickPrev')
@@ -31,8 +58,17 @@ waitForAnimate: false,
       dots: true,
       appendDots: $('.testimonials__dots'),
       waitForAnimate: false,
-    
-});
+      responsive:
+      [
+        {
+          breakpoint: 700,
+          settings: {
+            
+          },   
+        },
+      ]
+    });
+
 $('.testimonials__prev').on('click', function (e) {
   e.preventDefault()
   $('.testimonials__slider').slick('slickPrev')
