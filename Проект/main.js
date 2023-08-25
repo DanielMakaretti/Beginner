@@ -129,12 +129,22 @@ setInterval(() => {
   }
 }, 0);
 
-$('.burger, .overlay').on('click', function (e) {
+$('.burger, .overlay, .header__top-inner a').on('click', function (e) {
 e.preventDefault()
 $('.header__top-inner').toggleClass('header__top--open')
 $('.burger').toggleClass('burger--active')
 $('.overlay').toggleClass('overlay--show')
 });
 
-   
+$('.footer__sitemap-head').on('click', function (e) {
+  $(this).next().slideToggle()
+});
+$('.footer__courses-head').on('click', function (e) {
+  $(this).next().slideToggle()
+});
+$('.footer__contactus-head').on('click', function (e) {
+  $(this).next().slideToggle()
+});
+
+
  
